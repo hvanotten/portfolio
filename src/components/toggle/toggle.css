@@ -1,0 +1,43 @@
+
+
+.t{
+    width: 60px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1pz solid #999;
+    background-color: white;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px purple solid;
+}
+
+.t-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.t-button{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #999;
+    position: absolute;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .t {
+    width: 50px;
+    height: 25px;
+    border: none;
+  }
+  .t-button{
+      width: 25px;
+      height: 25px;
+  }
+}

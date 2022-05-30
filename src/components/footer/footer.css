@@ -1,0 +1,27 @@
+
+.footer {
+    font-size: 16px;
+    background-color: #150934;
+}
+.f-p{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+{
+  .footer{
+     margin-top: auto;
+  }
+  .f-p {
+    padding: 0;
+  }
+}
+
