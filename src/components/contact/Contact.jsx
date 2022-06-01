@@ -1,34 +1,16 @@
 import "./contact.css";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
-import { useContext, useRef, useState } from "react";
-import emailjs from "emailjs-com";
+import { useContext,} from "react";
+
 import { ThemeContext } from "../../context";
+
 import { SocialIcon } from 'react-social-icons';
 
 
 const Contact = () => {
-  const formRef = useRef();
-  const [done, setDone] = useState(false)
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-      emailjs.sendForm(
-          'service_5zc3eaa',
-          'template_apavsu5',
-          formRef.current,
-          'user_CgVZO8SnQs9vaUeejbmUJ'
-      )
-      .then((result) => {
-          console.log(result.text);
-          setDone(true)
-      }, (error) => {
-          console.log(error.text);
-      });
-  };
-
 
   return (
     <div className="c">
@@ -65,28 +47,27 @@ const Contact = () => {
             I'd love to hear about your project.
           </p>
 
-              <form
-          method='POST'
-          name='contactForm'
-          className='contactForm'>
+          <form
+            method="POST"
+            data-netlify="true"
+            onSubmit="submit"
+          >
+            <input type="hidden" name="form-name" value="contact"></input>
+            <div>
+              <input style={{ backgroundColor: darkMode && "#333" }} type="text" placeholder="Name" name="user_name" />
+            </div>
+            <div>
+              <input style={{ backgroundColor: darkMode && "#333" }} type="text" placeholder="Email" name="user_email" />
+            </div>
+            <div>
+            <textarea style={{ backgroundColor: darkMode && "#333" }} rows="5" placeholder="Message" name="message" />
+            </div>
+            <div class="field">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+            <button>Submit</button>
 
-          <input
-            type='text'
-            name='name'
-            placeholder='Enter your name' />
-
-          <input
-            type='email'
-            name='email'
-            placeholder='Enter your email' />
-
-          <textarea
-            name='message'
-            placeholder='Message'></textarea>
-
-          <button type='submit'>Submit</button>
-
-           </form>
+          </form>
         </div>
       </div>
     </div>
