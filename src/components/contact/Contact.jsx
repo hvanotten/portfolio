@@ -65,14 +65,28 @@ const Contact = () => {
             I'd love to hear about your project.
           </p>
 
-          <form ref={formRef} onSubmit={handleSubmit}>
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Name" name="user_name" />
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Subject" name="user_subject" />
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Email" name="user_email" />
-            <textarea style={{backgroundColor: darkMode && "#333"}} rows="5" placeholder="Message" name="message" />
-            <button>Submit</button>
-            {done && "Thank you..."}
-          </form>
+              <form
+          method='POST'
+          name='contactForm'
+          className='contactForm'>
+
+          <input
+            type='text'
+            name='name'
+            placeholder='Enter your name' />
+
+          <input
+            type='email'
+            name='email'
+            placeholder='Enter your email' />
+
+          <textarea
+            name='message'
+            placeholder='Message'></textarea>
+
+          <button type='submit'>Submit</button>
+
+           </form>
         </div>
       </div>
     </div>

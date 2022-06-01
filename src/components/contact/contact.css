@@ -64,6 +64,25 @@
   padding: 2px;
 }
 
+.contactForm{
+  padding: 10px;
+  width: 90%;
+  max-width: 400px;
+  margin: 30px auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contactForm input, button, textarea{
+  height: 50px;
+  padding-left: 5px;
+  font-size: 18px;
+}
+.contactForm textarea{
+  height: 100px;
+}
+/*
 form {
   margin-top: 20px;
 }
@@ -91,8 +110,8 @@ button {
   background-color: #59b256;
   color: white;
   font-weight: 500;
-  cursor: pointer;
-}
+  cursor: pointer; */
+/* } */
 
 
 /* Portrait and Landscape */
