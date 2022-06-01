@@ -51,8 +51,11 @@ const Contact = () => {
             method="POST"
             data-netlify="true"
             onSubmit="submit"
+            data-netlify-honeypot="bot-field"
           >
-            <input type="hidden" name="form-name" value="contact"></input>
+            <div hidden>
+              <input name="bot-field"></input>
+            </div>
             <div>
               <input style={{ backgroundColor: darkMode && "#333" }} type="text" placeholder="Name" name="user_name" />
             </div>
