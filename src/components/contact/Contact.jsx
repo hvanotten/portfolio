@@ -48,6 +48,7 @@ const Contact = () => {
           </p>
 
           <form
+            name="contact"
             method="POST"
             data-netlify="true"
             onSubmit="submit"
@@ -65,10 +66,8 @@ const Contact = () => {
             <div>
             <textarea style={{ backgroundColor: darkMode && "#333" }} rows="5" placeholder="Message" name="message" />
             </div>
-            <div class="field">
-              <div data-netlify-recaptcha="true"></div>
-            </div>
-            <button>Submit</button>
+           
+            <button type="submit">Submit</button>
 
           </form>
         </div>
