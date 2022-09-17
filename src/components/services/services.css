@@ -1,28 +1,33 @@
 .s {
-
-    height: 100vh;
     display: flex;
     justify-content: center;
+    padding: 50px 20px 20px 100px;
+     height: 75vh;
 }
 
 .s-left{
     flex: 1;
+     display: flex;
+     justify-content: center;
+     position: relative;
+
+
+}
+.s-card {
+   position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: #451EA2;
+    border-radius: 10%;
+
+}
+.s-right{
+     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     height: 100%;
-}
-.s-card.bg {
-    position: absolute;
-    background-color: #451EA2;
-}
-.s-right{
-     flex: 1;
-     display: flex;
-     justify-content: center;
-     position: relative;
-     padding: 6px;
 }
 
 .s-right-wrapper{
@@ -30,12 +35,24 @@
     align-items: center;
     text-align: center;
     width: 80%;
-    padding-top: 175px;
+    padding-top: 50px;
     position: relative;
     overflow: hidden;
+    font-size: 1.5rem;
+    line-height: 1.75;
+}
+.s-title{
+ font-size: 4rem;
+}
+.s-text{
+    text-align: center;
+    padding: 15px;
 }
 .s-list{
-    padding: 10px;
+    padding-left: 25px;
+    padding-top: 5px;
+    text-align: left;
+    font-size: 1.5rem;
 }
 .responsive{
    display: block;
@@ -43,11 +60,7 @@
   margin-right: auto;
   width: 80%;
 }
-li{
-    padding: 5px;
-}
 
-/* h1 { font-size: 2em; line-height: ?; } */
 
 
 /* Portrait and Landscape */
@@ -59,17 +72,24 @@ li{
     .s{
       flex-direction: column;
       text-align: center;
-      height: 600px;
+      line-height: normal;
+      font-size: 1rem;
+      height: auto;
+      margin: 0;
+      padding: 0;
     }
 
-    .s-left{
+    .s-right{
         display: none;
+    }
+    .s-left-wrapper{
+        padding-top: none;
     }
     .s-card{
         display: none;
     }
     .s-title{
-        font-size: large;
+        font-size: 2rem;
         padding: 5px;
     }
     .s-list{
@@ -88,9 +108,14 @@ and (max-device-width : 1024px) {
 .s{
       display: flex;
       text-align: center;
-      height: 800px;
+      height: auto;
     }
 .s-right{
     text-align: center;
+}
+.s-card{
+     position: absolute;
+    top: 50px;
+    left: 50px;
 }
 }

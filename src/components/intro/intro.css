@@ -5,6 +5,7 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    font-size: 12px;
 }
 .i {
   display: flex;
@@ -51,6 +52,10 @@ html,body
   height: 50px;
   overflow: hidden;
   justify-content: center;
+}
+.i-desc {
+font-size: 1.5rem;
+line-height: 1.5;
 }
 
 .i-title-wrapper {

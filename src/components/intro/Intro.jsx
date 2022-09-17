@@ -17,8 +17,9 @@ const Intro = () => {
                             <div className="i-title-item"></div>
                         </div>
                     </div>
-                    <p className="i-desc">A responsive and accessible web presence is essential.<br></br> I design and develop services for customers of all sizes,
-                        specializing in creating stylish, modern websites, web services and online stores. <br></br> How can I help you today?
+                    <p className="i-desc">A responsive and accessible web presence is essential.<br></br> I design and develop services for customers of all sizes,<br></br>
+              specializing in creating stylish, modern websites,<br>
+              </br> web services and online stores. <br></br> <br></br> How can I help you today?
                     </p>
                 </div>
                 <svg

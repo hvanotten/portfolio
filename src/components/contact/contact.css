@@ -1,6 +1,8 @@
 .c {
   height: 100vh;
   position: relative;
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
 
 .c-bg {
@@ -18,6 +20,7 @@
 
 .c-left {
   flex: 1;
+  align-items: center;
 }
 
 .c-right {
@@ -70,7 +73,7 @@ form {
 }
 
 input {
-  width: 50%;
+  width: 100%;
   height: 50px;
   border: none;
   border-bottom: 1px solid black;
@@ -92,7 +95,7 @@ button {
   background-color: #59b256;
   color: white;
   font-weight: 500;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 
@@ -140,7 +143,7 @@ and (max-device-width : 480px) {
   }
 
   input {
-    width: 35%;
+    width: 75%;
     height: 40px;
     margin: 10px;
     margin-left: 0;
@@ -189,10 +192,11 @@ and (max-device-width : 1024px) {
     margin-top: 0px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
   }
 
   input {
-    width: 35%;
+    width: 75%;
     height: 40px;
     margin: 10px;
     margin-left: 0;

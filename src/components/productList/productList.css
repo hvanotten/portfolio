@@ -13,10 +13,12 @@
 .pl-title {
   font-size: 50px;
   font-weight: 600;
+  font-size: 4rem;
 }
 
 .pl-desc {
   margin: 20px 0px;
+  font-size: 1.5rem;
 }
 
 .pl-list {

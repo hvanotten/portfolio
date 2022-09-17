@@ -48,28 +48,39 @@ const Contact = () => {
           </p>
 
           <form
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            onSubmit="submit"
-            data-netlify-honeypot="bot-field"
-          >
-            <div hidden>
-              <input name="bot-field"></input>
-            </div>
-            <div>
-              <input style={{ backgroundColor: darkMode && "#333" }} type="text" placeholder="Name" name="user_name" />
-            </div>
-            <div>
-              <input style={{ backgroundColor: darkMode && "#333" }} type="text" placeholder="Email" name="user_email" />
-            </div>
-            <div>
-            <textarea style={{ backgroundColor: darkMode && "#333" }} rows="5" placeholder="Message" name="message" />
-            </div>
-           
-            <button type="submit">Submit</button>
+      name="contact v2"
+      method="post"
+      data-netlify="true"
+      onSubmit="submit"
+      data-netlify-honeypot="bot-field"
+    >
+      <input type="hidden" name="form-name" value="contact v4" />
 
-          </form>
+      <div hidden>
+        <input name="bot-field" />
+      </div>
+
+      <div>
+        <label style={{backgroundColor: darkMode && "#333"}} > Name<br />
+            <input style={{backgroundColor: darkMode && "#333"}} type="text" name="first-name" />
+        </label>
+      </div>
+
+      <div>
+        <label  style={{backgroundColor: darkMode && "#333"}}  htmlFor="email" >Email</label><br />
+        <input style={{backgroundColor: darkMode && "#333"}} id="email" type="email" name="email" />
+      </div>
+
+      <div>
+        <label style={{backgroundColor: darkMode && "#333"}} > Message: <br />
+          <textarea style={{backgroundColor: darkMode && "#333"}}  name="comments"></textarea>
+        </label>
+      </div>
+
+      <button type="submit">Send Message</button>
+
+    </form>
+
         </div>
       </div>
     </div>
