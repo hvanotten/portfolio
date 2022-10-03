@@ -19,7 +19,7 @@ const About = () => {
                 <p className="a-desc">    How can I help you today?</p>
 
                 <ul className="a-sub">
-                <button class="resume-button" onClick={saveFile}>Download Resume</button>
+                <button className="resume-button" onClick={saveFile}>Download Resume</button>
                 </ul>
             </div>
 

@@ -1,11 +1,15 @@
 import "./contact.css";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
+
+
 import { useContext,} from "react";
 
 import { ThemeContext } from "../../context";
 
 import { SocialIcon } from 'react-social-icons';
+
+
 
 
 const Contact = () => {
@@ -47,40 +51,16 @@ const Contact = () => {
             I'd love to hear about your project.
           </p>
 
-          <form
-      name="contact v2"
-      method="post"
-      data-netlify="true"
-      onSubmit="submit"
-      data-netlify-honeypot="bot-field"
-    >
-      <input type="hidden" name="form-name" value="contact v4" />
+ {/* Contact form */}
 
-      <div hidden>
-        <input name="bot-field" />
-      </div>
 
-      <div>
-        <label style={{backgroundColor: darkMode && "#333"}} > Name<br />
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" name="first-name" />
-        </label>
-      </div>
-
-      <div>
-        <label  style={{backgroundColor: darkMode && "#333"}}  htmlFor="email" >Email</label><br />
-        <input style={{backgroundColor: darkMode && "#333"}} id="email" type="email" name="email" />
-      </div>
-
-      <div>
-        <label style={{backgroundColor: darkMode && "#333"}} > Message: <br />
-          <textarea style={{backgroundColor: darkMode && "#333"}}  name="comments"></textarea>
-        </label>
-      </div>
-
-      <button type="submit">Send Message</button>
-
-    </form>
-
+          <form name="contact" action="/contact" method="POST">
+            <input type="hidden" name="form-name" value="contact" />
+            <input required type="text" name="name" placeholder="Your Name" style={{backgroundColor: darkMode && "#333"}} />
+            <input required type="text" name="email" placeholder="Your Email" style={{backgroundColor: darkMode && "#333"}}/>
+            <textarea required name="message" placeholder="Message" id="" cols="30" rows="10"style={{backgroundColor: darkMode && "#333"}}></textarea>
+            <button type="submit" >Send Message</button>
+          </form>
         </div>
       </div>
     </div>

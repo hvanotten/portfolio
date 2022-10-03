@@ -19,7 +19,7 @@ const Services = () => {
             <div className="s-right">
                 <div className="s-card bg"></div>
                 <div className="s-card">
-                    <img src={design} alt="design team pointing at things" class="responsive"/>
+                    <img src={design} alt="design team pointing at things" className="responsive"/>
                 </div>
             </div>
     </div>
