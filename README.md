@@ -1,11 +1,12 @@
 
 # My Portfolio
 HTML5, CSS3, React.Js Portfolio Site including links to my projects and ways to get in contact with me.
+
 I wanted to design my own portfolio to show my proficiency in React as well as showcase my approach to accessible design
 
-**Link to project:** http://recruiters-love-seeing-live-demos.com/
+**Link to project:** https://hillaryvanotten.netlify.app/
 
-![Portfolio](http://placecorgi.com/1200/650)
+![Portfolio](https://ibb.co/HNtt6KC)
 
 ## How It's Made:
 
