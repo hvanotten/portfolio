@@ -6,7 +6,7 @@ I wanted to design my own portfolio to show my proficiency in React as well as s
 
 **Link to project:** https://hillaryvanotten.netlify.app/
 
-![Portfolio](https://ibb.co/HNtt6KC)
+[Portfolio](https://ibb.co/HNtt6KC)
 
 ## How It's Made:
 
