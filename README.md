@@ -27,10 +27,6 @@ Take a look at these couple examples that I have in my own portfolio:
 
 [Restaurant Page](https://restaurant-sampler.netlify.app/)
 
-**To-Do List:** https://github.com/alecortega/twitter-battle
-
-**Patch Panel:** https://github.com/alecortega/patch-panel
-
 
 
 # Getting Started with Create React App
