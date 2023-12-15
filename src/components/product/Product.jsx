@@ -1,4 +1,4 @@
-import "./product.css";
+import "./product.scss";
 
 
 const Product = ({img, link}) => {

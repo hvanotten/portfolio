@@ -1,32 +1,31 @@
-import { useContext } from "react";
+"use client";
+
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Intro from "./components/intro/Intro";
 import ProductList from "./components/productList/ProductList";
-import Services from "./components/services/Services";
-import Toggle from "./components/toggle/Toggle";
+import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
-import { ThemeContext } from "./context";
+// import Blog from "./components/blog/Blog";
+import "./App.scss";
 
-const App = () => {
-  const theme = useContext(ThemeContext);
-  const darkMode = theme.state.darkMode;
+function App() {
   return (
-    <div
-      style={{
-        backgroundColor: darkMode ? "#222" : "#FAF8FB",
-        color: darkMode && "white",
-      }}
-    >
-      <Toggle />
+    <div>
+      <div className="Starbkgd">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+      </div>
+      <Navbar />
       <Intro />
       <ProductList />
-      <Services />
       <About />
+      {/* <Blog /> */}
       <Contact />
       <Footer />
     </div>
   );
-};
+}
 
 export default App;

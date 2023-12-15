@@ -1,4 +1,4 @@
-import "./productList.css";
+import "./productList.scss";
 import Product from "../product/Product";
 import { products } from "../../data";
 
@@ -6,10 +6,10 @@ const ProductList = () => {
   return (
     <div className="pl">
       <div className="pl-texts">
-        <h1 className="pl-title">Create & inspire. </h1>
+        <h1 className="pl-title">Recent Work </h1>
         <p className="pl-desc">
           My mission is to help find you sustainable small business solutions and transform problems into successful projects through a responsible design process.
-          An effective, beautiful website is a game changer. 
+          An effective, beautiful website is a game changer.
 
 
         </p>

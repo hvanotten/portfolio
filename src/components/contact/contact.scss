@@ -1,5 +1,6 @@
 .c {
-  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
   position: relative;
   font-size: 1.5rem;
   line-height: 1.5;
@@ -11,6 +12,11 @@
   height: 100%;
   background-color: #451EA2;
   position: absolute;
+}
+
+.c-stars {
+ height: auto;
+
 }
 
 .c-wrapper {
@@ -97,6 +103,7 @@ button {
   font-weight: 500;
   cursor: pointer;
 }
+
 
 
 /* Portrait and Landscape */
@@ -206,3 +213,5 @@ and (max-device-width : 1024px) {
     margin-top: 10px;
   }
 }
+
+
