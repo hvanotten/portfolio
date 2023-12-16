@@ -4,7 +4,7 @@ import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Intro from "./components/intro/Intro";
 import ProductList from "./components/productList/ProductList";
-import Navbar from "./components/navbar/Navbar";
+// import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 // import Blog from "./components/blog/Blog";
 import "./App.scss";
