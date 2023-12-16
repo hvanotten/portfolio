@@ -1,39 +1,33 @@
-import './navbar.scss'
-import { useRef } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+// import './navbar.scss'
+// import { useRef } from "react";
+// import { FaBars, FaTimes } from "react-icons/fa";
 
 
-function Navbar() {
-	const navRef = useRef();
+// function Navbar() {
+// 	const navRef = useRef();
 
-	const showNavbar = () => {
-		navRef.current.classList.toggle(
-			"responsive_nav"
-		);
-	};
+// 	const showNavbar = () => {
+// 		navRef.current.classList.toggle(
+// 			"responsive_nav"
+// 		);
+// 	};
 
-	return (
-		<header>
-			<h3></h3>
-			<nav ref={navRef}>
-				<a href="/#">Home</a>
-				<a href="/#">My work</a>
-				
-                <a href="/#">About me</a>
-                <a href="/#">Contact</a>
-				<button
-					className="nav-btn nav-close-btn"
-					onClick={showNavbar}>
-					<FaTimes />
-				</button>
-			</nav>
-			<button
-				className="nav-btn"
-				onClick={showNavbar}>
-				<FaBars />
-			</button>
-		</header>
-	);
-}
+// 	return (
+// 		<Navbar expand="lg" className="bg-body-tertiary">
+//       <Container>
+//         <Navbar.Brand href="#home"></Navbar.Brand>
+//         <Navbar.Toggle aria-controls="basic-navbar-nav" />
+//         <Navbar.Collapse id="basic-navbar-nav">
+//           <Nav className="me-auto">
+//             <Nav.Link href="#home">Home</Nav.Link>
+//             <Nav.Link href="#link">My Work</Nav.Link>
+//             <Nav.Link href="#link">About Me</Nav.Link>
+//             <Nav.Link href="#link">Contact</Nav.Link>
+//           </Nav>
+//         </Navbar.Collapse>
+//       </Container>
+//     </Navbar>
+// 	);
+// }
 
-export default Navbar;
+// export default Navbar;

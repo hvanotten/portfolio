@@ -17,7 +17,7 @@ function App() {
         <div id="stars2"></div>
         <div id="stars3"></div>
       </div>
-      <Navbar />
+      {/* <Navbar /> */}
       <Intro />
       <ProductList />
       <About />
